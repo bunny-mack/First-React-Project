@@ -3,28 +3,28 @@ import * as FaIcons from 'react-icons/fa';
 
 export const SidebarData = [
     {
-        title: "Home",
+        title: 'Home',
         icon: <FaIcons.FaHome />,
-        link: "/home"
+        link: '/home'
     },
     {
-        title: "Profile",
+        title: 'Profile',
         icon: <FaIcons.FaUser />,
-        link: "/profile"
+        link: '/profile'
     },
     {
-        title: "Review",
+        title: 'Review',
         icon: <FaIcons.FaComment />,
-        link: "/review"
+        link: '/review'
     },
     {
-        title: "Search",
+        title: 'Search',
         icon: <FaIcons.FaSearch />,
-        link: "/search"
+        link: '/search'
     },
     {
-        title: "Filter",
+        title: 'Filter',
         icon: <FaIcons.FaFilter />,
-        link: "/filter"
+        link: '/filter'
     }
-]
+];
