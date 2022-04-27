@@ -1,14 +1,26 @@
 import React from 'react'
-import * as FaIcons from "react-icons/fa";
-import { Link } from 'react-router-dom'
+import '../App.css';
+import {SidebarData} from './SidebarData'
+
 
 
 function Sidebar() {
   return (
-      <div>
-        
-      </div>
-  )
+    <div className="Sidebar">
+      <ul>
+        {SidebarData.map((val, key) => {
+          return <li key={key} onClick={()=> {window.location.pathName = val.link}}>
+            {" "}
+            <div>{val.icon}</div> {" "}
+            <div>
+              {val.title}
+            </div>
+            
+            </li>;
+        })}
+    </ul>
+  </div>
+  );
 }
 
 export default Sidebar
